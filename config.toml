@@ -1,0 +1,81 @@
+baseURL = "https://thiagocoutinho.com/"
+languageCode = "pt-br"
+title = "Thiago Coutinho"
+theme = "personal-web"
+copyright="© Thiago Coutinho. Todos os direitos reservados."
+googleAnalytics = ""
+enableEmoji=true
+enableRobotsTXT=true
+pygmentsUseClasses=true
+pygmentsCodeFences=true
+
+[params.intro]
+  main = "Thiago Coutinho"
+  sub = "Analista de Sistemas / Desenvolvedor"
+
+[taxonomies]
+  design = "designs"
+  tech = "techs"
+
+[blackfriday]
+  hrefTargetBlank = true
+
+[params]
+  breadcrumb = true
+  accentColor = "#FD3519"
+  mainSections = ['post'] 
+
+[params.notFound]
+  gopher = "/images/gopher.png"
+  h1 = 'Bummer!'
+  p = "Parece que esta página não existe!"
+
+[params.sections]
+  # Define how your sections will be called
+  # when automatically pulled. For instance in the 404 page
+  post = "article"
+  portfolio = "project"
+
+[params.sidebar]
+  backgroundImage = '/images/default-sidebar.jpg'
+  gradientOverlay = 'rgba(0,0,0,0.4),rgba(0,0,0,0.4)'
+  logo = "/images/thilsc.jpg"
+
+[params.assets]
+  favicon = ""
+  customCSS = ""
+
+[params.social]
+  github = "https://github.com/thilsc"
+  linkedin = "https://www.linkedin.com/in/thiagolsc"
+  medium = "https://medium.com/thilsc"
+
+[params.contact]
+  email = "contato@thiagocoutinho.com"
+  text= "E-mail para contato"
+
+
+[menu]
+
+[[menu.main]]
+  identifier = "blog"
+  name = "Blog"
+  title = "Blog"
+  url = "/post/"
+  weight = -100
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[privacy]
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    disable = true
+    respectDoNotTrack = true
+    useSessionStorage = false
+  [privacy.twitter]
+    disable = false
+    enableDNT = true
+    simple = false
